@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 // 3. Importar tus estilos personalizados (si aún no tienes este archivo, créalo en esa ruta)
-import './assets/css/style.css';
+import '/css/style.css';
 
 /**
  * Función para cargar componentes HTML de forma modular
@@ -26,8 +26,8 @@ async function loadComponent(id, url) {
 // 4. Ejecutar la carga de componentes al iniciar
 document.addEventListener('DOMContentLoaded', () => {
     // Estas rutas deben coincidir con tus archivos dentro de assets
-    loadComponent('navbar-placeholder', '/assets/components/navbar.html');
-    loadComponent('footer-placeholder', '/assets/components/footer.html');
+    loadComponent('navbar-placeholder', 'assets/components/navbar.html');
+    loadComponent('footer-placeholder', 'assets/components/footer.html');
     
     console.log("¡Entorno ItSolutions listo!");
 });
