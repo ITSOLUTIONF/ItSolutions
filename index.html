@@ -4,61 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT Solutions</title>
-    
-    </head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
 <body>
 
     <div id="navbar-placeholder"></div>
 
     <main>
         <section id="banner-section">
-            <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div id="mainCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+                </div>
+
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="bg-dark text-white d-flex align-items-center justify-content-center" style="height: 60vh;">
-                            <div class="text-center">
-                                <h1>Soluciones Tecnológicas</h1>
-                                <p>Innovación a tu medida</p>
-                            </div>
+                    <div class="carousel-item active" data-bs-interval="5000">
+                        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=2070&auto=format&fit=crop" class="d-block w-100 vh-60 object-fit-cover" alt="Tecnología">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-4 p-4 mb-5">
+                            <h2 class="display-4 fw-bold">Soluciones Tecnológicas</h2>
+                            <p class="lead">Impulsamos tu negocio con software de última generación.</p>
                         </div>
                     </div>
+
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop" class="d-block w-100 vh-60 object-fit-cover" alt="Equipo">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-4 p-4 mb-5">
+                            <h2 class="display-4 fw-bold">Transformación Digital</h2>
+                            <p class="lead">Diseño web moderno enfocado en la experiencia del usuario.</p>
+                        </div>
                     </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
             </div>
         </section>
 
-        <section class="container py-5" id="servicios">
-            <div class="text-center mb-5">
-                <h2 class="fw-bold">Nuestros Servicios</h2>
-                <hr class="mx-auto" style="width: 50px; height: 3px; background: #0d6efd;">
-            </div>
-            
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Desarrollo Web</h5>
-                            <p class="card-text text-muted">Sitios modernos, rápidos y adaptables a cualquier dispositivo.</p>
+    <section class="container py-5" id="servicios">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold text-uppercase" style="letter-spacing: 2px;">Nuestros Servicios</h2>
+            <hr class="mx-auto" style="width: 60px; height: 4px; background: #0d6efd; opacity: 1;">
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0 custom-card">
+                    <div class="card-body p-4 text-center">
+                        <div class="icon-box mb-3 mx-auto bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
+                            <i class="bi bi-laptop text-primary fs-2"></i>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Base de Datos</h5>
-                            <p class="card-text text-muted">Optimización y administración profesional de datos.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Soporte Técnico</h5>
-                            <p class="card-text text-muted">Asistencia especializada para el crecimiento de tu negocio.</p>
-                        </div>
+                        <h5 class="card-title fw-bold">Desarrollo Web</h5>
+                        <p class="card-text text-muted small">Sitios modernos, rápidos y adaptables a cualquier dispositivo con las últimas tecnologías.</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm rounded-pill mt-2">Saber más</a>
                     </div>
                 </div>
             </div>
-        </section>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0 custom-card">
+                    <div class="card-body p-4 text-center">
+                        <div class="icon-box mb-3 mx-auto bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
+                            <i class="bi bi-database text-primary fs-2"></i>
+                        </div>
+                        <h5 class="card-title fw-bold">Base de Datos</h5>
+                        <p class="card-text text-muted small">Optimización, respaldo y administración profesional de datos para tu empresa.</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm rounded-pill mt-2">Saber más</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0 custom-card">
+                    <div class="card-body p-4 text-center">
+                        <div class="icon-box mb-3 mx-auto bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
+                            <i class="bi bi-headset text-primary fs-2"></i>
+                        </div>
+                        <h5 class="card-title fw-bold">Soporte Técnico</h5>
+                        <p class="card-text text-muted small">Asistencia especializada y mantenimiento preventivo para garantizar tu continuidad.</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm rounded-pill mt-2">Saber más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     </main>
 
     <div id="footer-placeholder"></div>

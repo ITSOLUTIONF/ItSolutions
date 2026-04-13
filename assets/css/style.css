@@ -1,0 +1,64 @@
+/* Efecto suave para los enlaces del Navbar */
+.nav-link {
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #0d6efd !important; /* El azul de Bootstrap */
+}
+
+/* Ajuste para que el cuerpo no quede pegado al Navbar sticky */
+body {
+    padding-top: 0; 
+}
+
+/* Altura optimizada para laptops y desktops */
+.vh-60 {
+    height: 60vh !important; /* Bajamos de 70 a 60 */
+    min-height: 400px;        /* Pero aseguramos un mínimo para que no se vea aplastado */
+}
+
+/* Ajuste específico para móviles */
+@media (max-width: 768px) {
+    .vh-60 {
+        height: 50vh !important;
+    }
+}
+/* Evita que la imagen se estire feo */
+.object-fit-cover {
+    object-fit: cover;
+}
+
+/* Animación suave para los textos del Carousel */
+.carousel-caption {
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Efecto para las tarjetas de servicios */
+.custom-card {
+    transition: transform 0.3s ease, shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.custom-card:hover {
+    transform: translateY(-10px); /* La tarjeta sube un poco */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12) !important; /* La sombra se vuelve más profunda */
+}
+
+/* Animación para el icono al pasar el mouse */
+.custom-card:hover .icon-box i {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
