@@ -57,8 +57,42 @@ body {
     box-shadow: 0 10px 20px rgba(0,0,0,0.12) !important; /* La sombra se vuelve más profunda */
 }
 
-/* Animación para el icono al pasar el mouse */
-.custom-card:hover .icon-box i {
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
+/* Alineación perfecta de iconos sociales */
+.custom-social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;  /* Forzamos un ancho fijo */
+    height: 24px; /* Forzamos un alto fijo */
+    transition: all 0.3s ease;
+}
+
+.custom-social-icon:hover {
+    transform: translateY(-3px); /* Pequeño salto hacia arriba muy elegante */
+}
+
+/* Color específico para hover de redes */
+.bi-whatsapp:hover { color: #25D366 !important; }
+.bi-facebook:hover { color: #1877F2 !important; }
+.bi-linkedin:hover { color: #0A66C2 !important; }
+.bi-instagram:hover { color: #E4405F !important; }
+
+/* Estilos para el Footer */
+footer a.text-muted:hover {
+    color: #0d6efd !important;
+    transition: 0.3s;
+}
+
+footer .list-inline-item a:hover {
+    color: #0d6efd !important;
+    transition: 0.3s;
+}
+
+/* Zoom suave en las imágenes del portafolio */
+#proyectos .card img {
+    transition: transform 0.5s ease;
+}
+
+#proyectos .card:hover img {
+    transform: scale(1.05);
 }
